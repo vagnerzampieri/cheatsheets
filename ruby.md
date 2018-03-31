@@ -1,6 +1,23 @@
+# Ruby >= 2.1
+
+#### elapsed time
+
+```ruby
+  time = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+  # => 2810266.714992
+  time / (24 * 60 * 60.0) # time / days
+  # => 32.52623512722222
+
+  starting = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+  # time consuming operation
+  ending = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+  elapsed = ending - starting
+  elapsed # => 9.183449000120163 seconds
+```
+
 # Ruby >= 2.5
 
-#### yeld_self and &method example:
+#### yeld_self and &method:
 
 ```ruby
   def call
@@ -9,8 +26,8 @@
       yield_self(&method(:hospital_clause))
   end
 
-  private 
-  
+  private
+
   def hospital_clause(relation)
     if clause
       relation.where(...)
