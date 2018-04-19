@@ -15,6 +15,11 @@
   elapsed # => 9.183449000120163 seconds
 ```
 
+##### references:
+
+ -   https://blog.dnsimple.com/2018/03/elapsed-time-with-ruby-the-right-way/
+
+
 # Ruby >= 2.5
 
 #### yeld_self and &method:
