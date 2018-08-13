@@ -42,6 +42,16 @@
   end
 ```
 
+# Ruby 2.3
+
+### Install Ruby 2.3 in Ubuntu 18.04
+
+```
+  sudo apt purge libssl-dev && sudo apt install libssl1.0-dev
+  sudo apt-get install libcurl4 libcurl4-openssl-dev
+```
+
+
 ##### references:
 
  -   https://robots.thoughtbot.com/using-yieldself-for-composable-activerecord-relations
