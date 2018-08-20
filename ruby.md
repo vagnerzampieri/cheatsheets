@@ -1,3 +1,33 @@
+# Ruby
+
+#### lambda and Date defaults
+
+Use proc/lambda when use date default. When you uses the default without lambda,
+the date is current, when the class was created.
+
+```ruby
+  class Build < ActiveInteraction::Base
+    date :occurred_at, default: -> { Time.zone.now }
+
+    def execute
+    end
+  end
+
+# rspec
+  context "default attributes" do
+    let(:current_date) { Time.zone.now }
+    subject { described_class.new }
+
+    it "" do
+      Timecop.travel(current_date) do
+        expect(subject).to have_attributes(
+          occured_at: current_date
+        )
+      end
+    end
+  end
+```
+
 # Ruby >= 2.1
 
 #### elapsed time
