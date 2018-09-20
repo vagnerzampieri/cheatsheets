@@ -13,3 +13,7 @@
 
     - Use the Marker to make removal easier
     - Right Button > Cut Clip
+  
+### Rotate video
+    
+    - Right Button > Add Effect > Crop and transform > Rotate (keyframable) > Rotate X (change to posistive or negative number)
