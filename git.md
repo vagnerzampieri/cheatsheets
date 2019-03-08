@@ -15,7 +15,7 @@ config remote add origin git@gitlab.com:yourname/dotfiles.git
 config push -u origin master
 
 # setting up new machines
-git clone --bare git@gitlab.com:yourname/dotfiles.git $HOME/.cfg
+git clone --bare git@gitlab.com:yourname/dotfiles.git $HOME/.dotfiles
 
 # from here, you can pull, push, merge and checkout to your hearts content.
 ```
