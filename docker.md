@@ -1,11 +1,14 @@
 # Docker
-#### Não é necessário passar todo o ID de um CONTAINER para fazer alguma ação, passando as 3 primeiras letras o docker já entende
-#### 026a3b92a7cd
+
+Não é necessário passar todo o ID de um CONTAINER para fazer alguma ação, passando as 3 primeiras letras o docker já entende 
+
 ```
+026a3b92a7cd
 docker start 026
 ```
 
-#### Lista apenas os CONTAINERs ativos, o `-a` vai listar todos os CONTAINERs
+Lista apenas os CONTAINERs ativos, o `-a` vai listar todos os CONTAINERs
+
 ```
 docker ps
 ```
