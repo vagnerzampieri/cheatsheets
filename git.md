@@ -1,7 +1,7 @@
 # git
 
 ### --bare with dotfiles
-```ruby
+```
 git init --bare $HOME/.dotfiles
 echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
 source $HOME/.zshrc
@@ -18,4 +18,9 @@ config push -u origin master
 git clone --bare git@gitlab.com:yourname/dotfiles.git $HOME/.dotfiles
 
 # from here, you can pull, push, merge and checkout to your hearts content.
+```
+
+### ignoring files
+```
+git config --global core.excludesfile ~/.gitignore_global
 ```
