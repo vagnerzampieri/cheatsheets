@@ -12,6 +12,18 @@ node --experimental-modules index.js
 node -p "os.cpus().length"
 ```
 
+#### web debug
+
+```
+node --inspect-brk server.js
+```
+
+#### terminal debug
+
+```
+node inspect server.js
+```
+
 # npm
 
 #### create a package module
