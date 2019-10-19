@@ -6,6 +6,12 @@
 node --experimental-modules index.js
 ```
 
+#### run code in line
+
+```
+node -p "os.cpus().length"
+```
+
 # npm
 
 #### create a package module
