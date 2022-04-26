@@ -24,3 +24,11 @@ git clone --bare git@gitlab.com:yourname/dotfiles.git $HOME/.dotfiles
 ```
 git config --global core.excludesfile ~/.gitignore_global
 ```
+
+#### remove commit
+```
+git checkout <my branch>
+git rebase -i HEAD~<number of commits>
+(change the commit to drop)
+git push origin <my branch> -f
+```
